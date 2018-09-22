@@ -1,0 +1,36 @@
+createdAt: "2018-09-17T12:59:34.270Z"
+updatedAt: "2018-09-18T00:46:00.366Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "命令行操作mysql数据库"
+content: '''
+  # 命令行操作mysql数据库
+  之后想用命令行的方式搭建起一个数据库，暂时想做生物的数据库，存储设计上各种生物的信息。
+  ## 基本操作
+  * 显示所有数据库：
+  ```
+  show databases;
+  ```
+  * 创建数据库：
+  ```
+  create database xxx;
+  ```
+  * 选择数据库，每次要操作的时候都应该先选择要操作的数据库：
+  ```
+  use xxx;
+  ```
+  * 重命名数据库
+  [MySQL中数据库重命名 - CSDN博客](https://blog.csdn.net/zyz511919766/article/details/49335897)
+  * 删除数据库
+  ```
+  drop database xxx;
+  ```
+  ## 注意：
+  1. 每次打完命令都要带上后边的分号。
+  2. 删除数据库一定要谨慎，数据无价。
+  ## 自己说说
+  关于数据库的操作比较简单，增删改查而已。自己之前也就是创建过数据库，查看过数据库，但是基本没有用命令重命名或者删除过。
+'''
+tags: []
+isStarred: false
+isTrashed: false

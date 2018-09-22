@@ -1,0 +1,20 @@
+createdAt: "2018-09-18T07:48:25.495Z"
+updatedAt: "2018-09-18T08:20:13.042Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "命令行操作mysql数据表（2）"
+content: '''
+  # 命令行操作mysql数据表（2）
+  ——修改
+  ## 修改主键
+  [mysql 如何修改、添加、删除表主键 - 知识天地 - 博客园](https://www.cnblogs.com/mfryf/p/3457481.html)
+  ## 其他操作
+  [MySql修改数据表的基本操作（DDL操作） - 竹马今安在 - 博客园](https://www.cnblogs.com/wxw7blog/p/7867098.html)
+  
+  ## 说点什么
+  [自己试了试](:storage/646f570b-c62b-4f1a-a361-c710fb74de1c/1949bdbd.txt)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

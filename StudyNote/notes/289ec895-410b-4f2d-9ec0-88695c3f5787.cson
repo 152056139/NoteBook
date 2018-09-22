@@ -1,0 +1,23 @@
+createdAt: "2018-09-17T01:21:19.482Z"
+updatedAt: "2018-09-17T11:19:58.592Z"
+type: "MARKDOWN_NOTE"
+folder: "21b0daaf3dfebe8f3155"
+title: "UML建模的类型"
+content: '''
+  # UML建模的类型
+  * 结构建模
+      * 类图
+      * 对象图
+      * 部署图
+      * 包图
+      * 复合结构图
+      * 组件图
+  * 行为建模
+      * 活动图
+      * 交互图
+      * 用例图
+  * 架构建模
+'''
+tags: []
+isStarred: false
+isTrashed: false

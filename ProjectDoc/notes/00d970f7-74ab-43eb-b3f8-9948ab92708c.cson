@@ -1,0 +1,21 @@
+createdAt: "2018-09-22T01:21:04.425Z"
+updatedAt: "2018-09-22T01:21:04.425Z"
+content: '''
+  |name    |english name      |type    |
+  |----    |------------      |----    |
+  |项目ID  |project_id        |varchar(50)|
+  |专家ID  |expert_id         |varchar(50)|
+  |审稿意见|examine opinion   |string  |
+  |评审项1 |judge item1       |string  |
+  |评审项2 |judge item2       |string  |
+  |评审项3 |judge item3       |string  |
+  |评审项4 |judge item4       |string  |
+  |评审结果|judge result      |string  |
+  |资助意见|subsidize opinion |string  |
+'''
+folder: "2cb760a7c8be27f15dbd"
+title: "数据库 评审结果表"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,47 @@
+createdAt: "2018-09-16T15:11:28.552Z"
+updatedAt: "2018-09-16T15:11:42.006Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "图像"
+content: '''
+  # 图像
+  ## \\<img>
+  废话不说上代码:
+  ```html
+  <img src="logo.jpg" alt="logo" width="100" height="100">
+  ```
+  这就是插入一张logo图片
+  img：是一个空标签，没有闭合标签，所以图像需要用属性来指定。
+  src：指示图片的资源路径。
+  alt：一段当图片无法加载的时候用来替换的文本，可选，但是是一个好习惯，当无法加载和文本浏览器的时候都很友好。
+  width & height：指定图片宽度和高度的属性，也是一个好习惯，可以固定住排版，否则容易出现意想不到的排版方式。
+  注：加载图片会很缓慢，所以应该合理利用图片，注意图片大小。
+  
+  ## \\<map> & \\<area>
+  用这两个标签可以在一个图片中设置不同的部位为不同的可点击的链接。
+  我们来看一个例子：
+  
+  ```html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <meta charset="utf-8">
+          <title>菜鸟教程(runoob.com)</title>
+      </head>
+      <body>
+          <p>点击太阳或其他行星，注意变化：</p>
+          <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+          <map name="planetmap">
+            <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+            <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+            <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+          </map>
+      </body>
+  </html>
+  ```
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

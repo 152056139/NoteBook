@@ -1,0 +1,84 @@
+createdAt: "2018-09-16T15:05:16.750Z"
+updatedAt: "2018-09-16T15:06:23.968Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "DOCTYPE是什么"
+content: '''
+  # DOCTYPE是什么
+  ## 简单的说
+  -------
+  声明文档类型为HTML5，可以让浏览器更准确的加载页面。
+  HTML已经有很多的版本，每个版本对于各种标签的解析方式稍有差距。所以如果再文档开头给出标示，那浏览器就可以根据不同的方式去解析HTML文档。
+  
+  ## DOCTYPE标识
+  -------
+  <!DOCTYPE>声明位于文档的最前边，在<html>之前。它不是一个HTML成对标签，只是一个用来告诉浏览器这个文档使用了哪个HTML版本的标识。
+  “doctype”不区分大小写，所以以下写法都是可以的。
+  
+  ```
+  <!DOCTYPE html> 
+  <!DOCTYPE HTML> 
+  <!doctype html> 
+  <!Doctype Html>
+  ```
+  
+  ## HTML的版本
+  -------
+  
+  |版本       |	发布时间    |
+  |-----------|---------------|
+  |HTML       |1991           |
+  |HTML+      |1993           |
+  |HTML 2.0   |1995           |
+  |HTML 3.2   |1997           |
+  |HTML 4.0.1 |1999           |
+  |XHTML 1.0  |2000           |
+  |HTML 5     |2012           |
+  |XHTML 5    |2013           |
+  
+  ## 常见的DOCTYPE声明
+  -------
+  
+  ### HTML5
+  ```
+  <!DOCTYPE html>
+  ```
+  ### HTML 4.01 Strict
+  这个 DTD 包含所有 HTML 元素和属性，但不包括表象或过时的元素（如 font ）。框架集是不允许的。
+  ```
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  ```
+  ### HTML4.01 Transitional
+  这个 DTD 包含所有 HTML 元素和属性，包括表象或过时的元素（如 font ）。框架集是不允许的。
+  ```
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  ```
+  ### HTML 4.01 Frameset
+  这个 DTD 与 HTML 4.01 Transitional 相同，但是允许使用框架集内容。
+  ```
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+  ```
+  ### XHTML 1.0 Strict
+  这个 DTD 包含所有 HTML 元素和属性，但不包括表象或过时的元素（如 font ）。框架集是不允许的。结构必须按标准格式的 XML 进行书写。
+  ```
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  ```
+  ### XHTML 1.0 Transitional
+  这个 DTD 包含所有 HTML 元素和属性，包括表象或过时的元素（如 font ）。框架集是不允许的。结构必须按标准格式的 XML 进行书写。
+  ```
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  ```
+  ### XHTML 1.0 Frameset
+  这个 DTD 与 XHTML 1.0 Transitional 相同，但是允许使用框架集内容。
+  ```
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+  ```
+  ### XHTML 1.1
+  这个 DTD 与 XHTML 1.0 Strict 相同，但是允许您添加模块（例如为东亚语言提供 ruby 支持）。
+  ```
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

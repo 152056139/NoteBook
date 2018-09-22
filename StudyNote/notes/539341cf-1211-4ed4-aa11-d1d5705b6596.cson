@@ -1,0 +1,64 @@
+createdAt: "2018-09-16T15:09:00.058Z"
+updatedAt: "2018-09-16T15:09:08.842Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "列表"
+content: '''
+  # 列表
+  ## 基本
+  使用ol标签可以定义有序列表，用ul可以定义无序列表，然后在列表中可以用li定义列表项。如果没有猜错应该是order list和unorder list以及list item的缩写。
+  ## 嵌套列表
+  列表是可以无限制层次嵌套的，怎么个写法呢，就是在正常一层的列表中，某个列表项中写另外一个列表。比如
+  ```HTML
+  <ul>
+      <li>apple</li>
+      <li>samsung</li>
+      <li>
+          <ul>
+              <li>thinkpad</li>
+              <li>lenovo</li>
+          </ul>
+      </li>
+  </ul>
+  ```
+  ## 不同类型的列表
+  可以给ul或者li标签添加属性控制列表项前边的样式。比如有序列表前边到底是123还是abc还是ABC或者罗马数字；无序列表前边是个点点还是空心圈还是正方形的点点。
+  ### 无序列表
+  无序列表的样式不能通过属性直接修改，所以我们可以用css去控制无序列表的样式。包含的属性如下：
+  * style="list-style-type:disc"      // 点
+  * style="list-style-type:circle"    // 圈
+  * style="list-style-type:square"    // 正方形
+  ### 有序列表
+  有序列表是通过添加type属性，属性值为你想要的一系列的第一个就行了，后边的系统可以自动添加，默认为数字，比如：
+  * type="A"
+  * type="a"
+  * type="I"
+  * type="i"
+  ## 自定义列表
+  自定义列表不知道有什么用,看起来就是前边没有什么标识的列表，然后可以添加列表项的描述。
+  |标签|描述|
+  |---|----|
+  |\\<dl>|定义列表|
+  |\\<dt>|定义列表项|
+  |\\<dd>|定义列表项的描述|
+  
+  这是菜鸟教程自带的实例：
+  ```HTML
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  ```
+  效果如下：
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+'''
+tags: []
+isStarred: false
+isTrashed: false

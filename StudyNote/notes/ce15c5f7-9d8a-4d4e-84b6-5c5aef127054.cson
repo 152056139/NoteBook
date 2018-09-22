@@ -1,0 +1,35 @@
+createdAt: "2018-09-16T15:10:00.859Z"
+updatedAt: "2018-09-16T15:10:09.486Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "表格"
+content: '''
+  # 表格
+  ## 看前说一说
+  之前只是知道表格，大概可以用，但是细节还是不会用。
+  今天我就把每个标签都看看，然后练习做几个复杂的好看的表格试试。
+  ## 先弄一个表格
+  \\<table>标签定义表格，
+  \\<tr>标签定义行，
+  \\<td>标签定义列。
+  ## 表格和边框属性
+  \\<table>标签可以用border属性来定义表格的边框，如果不定义那就没有边框了。
+  ## 表格表头
+  \\<th>定义表格的表头，样式为粗体，居中。
+  ## 带有标题的表格
+  \\<caption>标签可以定义表格的标题。
+  ## 跨行跨列表格
+  colspan属性定义跨行
+  rowspan属性定义跨列
+  ## 表格内的标签
+  可以给表格中添加其他标签，列表，标签甚至表格等等
+  ## 单元格边距
+  给table标签添加cellpadding添加单元格边距
+  ## 单元格间距
+  给table标签添加cellspacing添加单元格间距
+  ## 表格的宽度和高度问题
+  [html 表格单元格的宽度和高度的设置](https://www.cnblogs.com/wangjian8888/p/6092178.html)
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,16 @@
+createdAt: "2018-09-22T01:21:04.413Z"
+updatedAt: "2018-09-22T01:21:04.413Z"
+content: '''
+  |名称|字段|
+  |----|----|
+  |项目ID|project_id|
+  |第一个专家|expert_id_1|
+  |第二个专家|expert_id_2|
+  |第三个专家|expert_id_3|
+'''
+folder: "2cb760a7c8be27f15dbd"
+title: "数据库 专家指派表"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

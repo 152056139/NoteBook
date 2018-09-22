@@ -1,0 +1,15 @@
+createdAt: "2018-09-20T13:27:10.154Z"
+updatedAt: "2018-09-21T01:14:24.201Z"
+type: "MARKDOWN_NOTE"
+folder: "1a429ba4aca3699c228c"
+title: "Apache httpd.conf 翻译"
+content: '''
+  # Apache httpd.conf 翻译
+  [httpd.conf](:storage/09f1f620-fefb-41ee-a6fc-5b162b69bf0d/7d7d95b8.conf)
+  Server version: Apache/2.4.34 (Unix)
+  ## 注意
+  只写了前面基本的，然后后边的我就没有再写了。因为是模块化的，那就用到哪个模块就写哪个模块把。
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,31 @@
+createdAt: "2018-09-16T15:08:22.302Z"
+updatedAt: "2018-09-16T15:08:30.765Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "链接"
+content: '''
+  # 链接
+  ## 链接的作用
+  链接可以实现从当前文档跳转到另外一个文档或者当前文档某个位置。
+  
+  ## 属性
+  |属性|作用|
+  |----|----|
+  |href|链接的URL|
+  |target|定义链接在什么地方打开|
+  
+  ## target属性
+  target属性可以定义链接在什么地方打开。
+  |属性值|描述|
+  |------|----|
+  |_blank|在新窗口中打开被链接的文档|
+  |_self |默认，在相同的框架中打开被链接的文档|
+  |_parent|在父框架集中打开被链接文档。|
+  |_top|在整个窗口中打开被链接文档。|
+  |framename|在指定的框架中打开被链接文档。|
+  
+  framename有两种使用方式：https://pan.baidu.com/s/1wTkEm1QUStLtTJp5ezQMtQ
+'''
+tags: []
+isStarred: false
+isTrashed: false

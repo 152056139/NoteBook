@@ -1,0 +1,41 @@
+createdAt: "2018-09-22T01:16:31.703Z"
+updatedAt: "2018-09-22T01:20:31.818Z"
+type: "MARKDOWN_NOTE"
+folder: "ccd1452a3f9257db2e2a"
+title: "数据库设计"
+content: '''
+  # 数据库设计
+  record
+  |字段名|类型|描述|
+  |------|----|----|
+  |record_id|varchar(50)|记录ID，主键|
+  |id|int|嗅探器设备id|
+  |mmac|char（17）|嗅探器设备本身Wi-Fi的mac地址|
+  |rate|int|发送频率|
+  |time|varchar|时间戳，采集到这些mac的时间|
+  |lat|double|纬度|
+  |lon|double|经度|
+  
+  data
+  
+  |字段名|类型|描述|
+  |------|----|----|
+  |data_id|varchar(50)|数据ID，主键|
+  |record_id|varchar（50）|记录ID|
+  |mac|char（17）|采集到的手机的mac|
+  |rssi|int|手机信号强度，单位为dbm|
+  |ts|varchar（max）|手机连接Wi-Fi的ssid|
+  |tmc|varchar（17）|手机连接的路由器的mac地址|
+  |tc|varchar（1）|是否与路由器相互连接|
+  |ds|varchar（1）|手机是否睡眠|
+  |essid0|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid1|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid2|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid3|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid4|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid5|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+  |essid6|varchar（max）|手机曾经连接过的Wi-Fi的ssid|
+'''
+tags: []
+isStarred: false
+isTrashed: false

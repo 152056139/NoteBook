@@ -1,0 +1,30 @@
+createdAt: "2018-09-17T12:46:49.813Z"
+updatedAt: "2018-09-17T12:58:06.629Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "redis入门"
+content: '''
+  # redis入门
+  ## 简介
+  redis是个键值对存储方式的数据库，因为整个操作在内存中运行，所以速度异常的块。
+  ## 安装
+  [mac系统安装redis - feijl - 博客园](https://www.cnblogs.com/feijl/p/6879929.html)
+  ## 基本操作
+  启动服务
+  ```
+  $ ./bin/redis-server etc/redis.conf // 刚才那个博客中说的
+  $ redis-cli // 本地这么就可以打开
+  $ redis-cli -h host -p port -a password // 远程打开
+  ```
+  查看日志
+  ```
+  $ tail -f log-redis.log
+  ```
+  打开redis客户端
+  ```
+  $ ./bin/redis-cli
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

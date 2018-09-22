@@ -1,0 +1,53 @@
+createdAt: "2018-09-18T09:28:10.601Z"
+updatedAt: "2018-09-19T00:46:46.452Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "mysql存储引擎"
+content: '''
+  # mysql存储引擎
+  ## 查看存储引擎
+  ```
+  mysql> show engines;
+  +--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+  | Engine             | Support | Comment                                                        | Transactions | XA   | Savepoints |
+  +--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+  | ARCHIVE            | YES     | Archive storage engine                                         | NO           | NO   | NO         |
+  | BLACKHOLE          | YES     | /dev/null storage engine (anything you write to it disappears) | NO           | NO   | NO         |
+  | MRG_MYISAM         | YES     | Collection of identical MyISAM tables                          | NO           | NO   | NO         |
+  | FEDERATED          | NO      | Federated MySQL storage engine                                 | NULL         | NULL | NULL       |
+  | MyISAM             | YES     | MyISAM storage engine                                          | NO           | NO   | NO         |
+  | PERFORMANCE_SCHEMA | YES     | Performance Schema                                             | NO           | NO   | NO         |
+  | InnoDB             | DEFAULT | Supports transactions, row-level locking, and foreign keys     | YES          | YES  | YES        |
+  | MEMORY             | YES     | Hash based, stored in memory, useful for temporary tables      | NO           | NO   | NO         |
+  | CSV                | YES     | CSV storage engine                                             | NO           | NO   | NO         |
+  +--------------------+---------+----------------------------------------------------------------+--------------+------+------------+
+  9 rows in set (0.00 sec)
+  
+  mysql> show variables like 'have%';
+  +------------------------+----------+
+  | Variable_name          | Value    |
+  +------------------------+----------+
+  | have_compress          | YES      |
+  | have_dynamic_loading   | YES      |
+  | have_geometry          | YES      |
+  | have_openssl           | YES      |
+  | have_profiling         | YES      |
+  | have_query_cache       | NO       |
+  | have_rtree_keys        | YES      |
+  | have_ssl               | YES      |
+  | have_statement_timeout | YES      |
+  | have_symlink           | DISABLED |
+  +------------------------+----------+
+  10 rows in set (0.00 sec)
+  ```
+  ## 操作默认存储引擎
+  1. Windows里向导的方式。
+  2. 修改my.ini中mysqld组中default-storage-engine的值。但是我表示Mac上没有默认的my.cnf还需要自己弄一个，听说默认的就足够好用了。
+  ## 选择存储引擎
+  [MySQL存储引擎的选择 - CSDN博客](https://blog.csdn.net/u012666996/article/details/79197176)
+  在普通的使用中用MyISAM，InnoDB和MEMARY。MyISAM不支持事务和外键，主要是简单块。MEMARY在内存中操作，数据量小计算快就用这个，安全没有保障。
+  ARCHIVE只能插入和查询，就是归档用的。
+'''
+tags: []
+isStarred: false
+isTrashed: false

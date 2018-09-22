@@ -1,0 +1,21 @@
+createdAt: "2018-09-16T15:09:36.023Z"
+updatedAt: "2018-09-16T15:09:45.334Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "伪元素"
+content: '''
+  # 伪元素
+  ## 作用
+  简单的说，可以给某些选择器设置特殊效果
+  
+  ## 属性
+  |属性|描述|CSS|
+  |----|----|----|
+  |：first-letter|向文本的第一个字母添加特殊样式。|1|
+  |：first-line|向文本的首行添加特殊样式|1|
+  |：before|在元素之前添加内容|2|
+  |：after|在元素之后添加内容|2|
+'''
+tags: []
+isStarred: false
+isTrashed: false

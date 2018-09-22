@@ -1,0 +1,17 @@
+createdAt: "2018-09-19T15:36:07.269Z"
+updatedAt: "2018-09-19T15:36:20.893Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "SQL UNION"
+content: '''
+  # SQL UNION
+  ## 简介
+  UNION操作符用于合并两个或多个SELECT语句查询结果集。
+  ## UNION和UNION ALL
+  UNION不允许重复的值，但是UNION ALL则允许。
+  ## 注意
+  使用UNION的时候它的SELECT子句中查询的列在数量、数据类型和顺序上都要是一致的。
+'''
+tags: []
+isStarred: false
+isTrashed: false

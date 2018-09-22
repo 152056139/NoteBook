@@ -1,0 +1,45 @@
+createdAt: "2018-09-16T15:07:51.577Z"
+updatedAt: "2018-09-16T15:08:01.487Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "文本格式化"
+content: '''
+  # 文本格式化
+  现在我们就来看看HTML中丰富的文本格式化。
+  
+  ## HTML文本格式化标签
+  |标签|描述|
+  |----|----|
+  |\\<b>|定义<b>粗体</b>文本|
+  |\\<em>|定义<em>着重</em>文字|
+  |\\<i>|定义<i>斜体</i>文字|
+  |\\<small>|定义<small>小号</small>文字|
+  |\\<strong>|定义<strong>加重</strong>语气|
+  |\\<sub>|定义<sub>下标</sub>字|
+  |\\<sup>|定义<sup>上标</sup>字|
+  |\\<ins>|定义<ins>插入</ins>字|
+  |\\<del>|定义<del>删除</del>字|
+  
+  ## HTML“计算机输入”标签
+  |标签|描述|
+  |----|----|
+  |\\<code>|定义计算机代码<code>echo "Hello World";</code>|
+  |\\<kbd>|定义键盘码<kbd>command</kbd>|
+  |\\<samp>|定义<samp>计算机代码样本</samp>|
+  |\\<var>|定义<var>变量</var>|
+  |\\<pre>|定义<pre>预格式文本</pre>|
+  
+  ## 引文，引用，及标签定义
+  |标签|描述|
+  |----|----|
+  |\\<abbr>|定义缩写<abbr>CEO</abbr>|
+  |\\<address>|定义地址<address>陕西省西安市</address>|
+  |\\<bdo>|定义<bdo>文字方向</bdo>|
+  |\\<blockquote>|定义<blockquote>长的引用</blockquote>|
+  |\\<q>|定义<q>短的引用语</q>|
+  |\\<cite>|定义<cite>引用、引证</cite>|
+  |\\<dfn>|定义一个<dfn>定义项目<dfn>|
+'''
+tags: []
+isStarred: false
+isTrashed: false

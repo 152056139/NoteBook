@@ -1,0 +1,39 @@
+createdAt: "2018-09-19T15:24:15.894Z"
+updatedAt: "2018-09-19T15:40:10.325Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "SQL语句操作数据"
+content: '''
+  # SQL语句操作数据
+  ## 插入数据
+  ```sql
+  // 插入一条数据
+  INSERT INTO 
+      table_name(col1,col2,col3...)
+      value     (val1,val2,val3...);
+      
+  // 插入多条数据
+  INSERT INTO
+      table_name(col1,col2,col3...)
+      SELECT    (val1,val2,val3...)
+      UNION ALL
+      SELECT    (val1,val2,val3...);
+  ```
+  ## 注意
+  1. 插入从别的表查询的数据就直接在select语句后边正常from查询就好了。
+  2. 代码中的into都是可以省略的。
+  3. 如果union all换成union那么如果有重复的数据将不会插入。
+  
+  ## 查询语句
+  ```SQL
+  SELECT col1,col2,col3...
+  FROM table_name
+  [WHERE clause]
+  [OFFSET M]      // 表示偏移量，默认是0
+  [LIMIT N]       // 表示限制多少条
+  ```
+  ### WHERE子句
+'''
+tags: []
+isStarred: false
+isTrashed: false

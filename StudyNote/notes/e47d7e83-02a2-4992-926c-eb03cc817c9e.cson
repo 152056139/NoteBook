@@ -1,0 +1,24 @@
+createdAt: "2018-09-21T01:03:27.519Z"
+updatedAt: "2018-09-21T01:18:22.361Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "apache DocumentRoot"
+content: '''
+  # apache DocumentRoot
+  documentroot定义的是服务器提供访问的内容的文件夹，在这里可以定义路径，然后可以控制访问权限。
+  这个在主配置文件/ServerRoot/httpd.conf中有相关配置
+  在虚拟主机配置的时候也需要/ServerRoot/extra/httpd-vhosts.conf 中也可能需要。
+  在配置用户目录的时候也需要，在/ServerRoot/users/username.conf中也需要配置。
+  ## Options
+  [Apache Options指令详解](http://www.365mini.com/page/apache-options-directive.htm)
+  ## MultiviewsMatch
+  这个是option选项中的其中一个子项，更详细的定义把，但是目前我在options中没有用multiviewsmatch，所以暂时不细说了。
+  ## AllowOverride
+  [Apache httpd.conf配置文件AllowOverride参数详解](http://www.upupw.net/server/n73.html)
+  ## Require
+  控制谁可以访问，一般设置为all denied/all granted
+  [Apache2.4使用require指令进行访问控制--允许或限制IP访问/通过User-Agent禁止不友好网络爬虫](https://www.cnblogs.com/leoyu/p/apache24_use_require_for_access_control_by_ip_and_useragent.html)
+'''
+tags: []
+isStarred: false
+isTrashed: false

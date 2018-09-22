@@ -1,0 +1,47 @@
+createdAt: "2018-09-19T00:46:48.267Z"
+updatedAt: "2018-09-19T01:25:30.516Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "mysql的事务"
+content: '''
+  # mysql的事务
+  ## 简介
+  mysql的InnoDB和BDB支持事务。
+  事务就是一次完整的操作，比如银行转账，从A账户里扣除1000，给B账户里增加1000.
+  * 事务具有原子性，这个操作要么都执行，要么都不执行，或者都回滚，不能只执行了其中一步。
+  * 数据要保持一致性，转账完成数据要一致，前不能多不能少。
+  * 隔离性，如果两个事务同时修改一个数据，对于他们每个事务自身而言都要一致，要么修改别人提交之前的，要么改别人提交以后的，不能你改改我改改。
+  * 持久性是事务每次执行完了以后都会存储到数据库中持久存储。
+  ## 事务控制语句
+  ```
+  START TRANSACTION | BEGIN [WORK]
+  COMMIT [WORK] [AND [NO] CHAIN] [[NO] RELEASE]
+  ROLLBACK [WORK] [AND [NO] CHAIN] [[NO] RELEASE]
+  SET AUTOCOMMIT = {0 | 1}
+  ```
+  ## 事务隔离级别
+  ```
+  SET GLOBAL TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+  SET GLOBAL TRANSACTION ISOLATION LEVEL READ COMMETTED;
+  SET GLOBAL TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+  SET GLOBAL TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+  ```
+  ### 读取未提交功能 read uncommitted
+  在这个隔离级别，所有事务都可以看到其他未提交事务的执行结果。因为其性能也不比其他级别高很多，因此这个也很少使用。
+  ### 读取提交内容 read committed
+  这是大多数数据库默认的隔离级别，但是不是mysql默认的隔离级别。该级别可以做到只看见别的事务提交的数据。但是如果别人真的提交了，那么自己可能就会出现不可重复读的问题了。
+  ### 可重读 repeatable-read
+  这是mysql默认的隔离级别，解决了不可重复度的问题，按理说这个隔离级别有幻读的问题。原理就是每个事务操作的都是自己开始的时候的数据镜像。
+  ## 其他概念
+  ### 脏数据（Dirty Read）
+  > 读取未提交的数据成为脏数据。
+  ### 不可重复度 （Nonrepeatable Read）
+  > 就是在同一个事务中，两次查询的结果不一致。原因就是中间这段时间别人提交了一个事务，改变了数据。
+  ### 幻读 （Phantom Read）
+  > 就是一个事务进行两次查询，第二次查到了第一次没有的数据。原因是第一次查询完了以后，有别的事务插入了新的数据。
+  ## 注意
+  所有的DDL语句都不能回滚，有的还会隐式提交。就是虽然没有直接提交，但是运行这个语句它就会自动提交。比如ALERT TABLE,TRUNCATE TABLE,DROP TABLE 等。
+'''
+tags: []
+isStarred: false
+isTrashed: false

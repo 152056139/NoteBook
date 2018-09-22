@@ -1,0 +1,54 @@
+createdAt: "2018-09-18T00:45:10.203Z"
+updatedAt: "2018-09-18T08:27:37.673Z"
+type: "MARKDOWN_NOTE"
+folder: "711f1acaa74b205dc0d2"
+title: "命令行操作mysql数据表（1）"
+content: '''
+  # 命令行操作mysql数据表（1）
+   ——创建和删除
+  ## 基本操作
+  * 创建数据表
+  
+      基本格式就是这样create table xxx(列名 类型 约束，列名 类型 单行约束，。。。。) 整体约束。
+      列名可以不带引号，也可以带tab上边的那个引号，而不是英文句子中的引号。
+      后边的default charset可以定义默认编码方式，一般utf8不会出现乱码。
+      给id列名后边的auto_increment表示自增，整体约束的auto_increment=11表示自增的初始值。
+      engine表示存储引擎。
+      primary key为设置主键。
+  ```sql
+  create table student(
+      `id` int not null auto_increment,
+      `name` varchar(30) default null,
+      `sex` int default 0,
+      primary key(`id`)
+  )engine=innodb auto_increment=11 default charset=utf8;
+  ```
+  
+  * 删除数据表
+  ```sql
+  drop table xxx;
+  ```
+  **注意：数据无价，删除小心**
+  * 查看所有数据表
+  ```sql
+  show tables;
+  ```
+  ## 问题
+  * 主键的另一种写法。
+  ```sql
+  create table student(
+      id int(11) NOT NULL AUTO_INCREMENT PRIMERY KEY  // 直接字段后边就行了
+      name varchar(30),
+      sex int default 0,
+  )default charset=utf8;
+  ```
+  还有一种就是先创建，没有主键的，然后修改主键。参考下边的问题，怎么修改数据表？
+  * 外键怎么设置？
+  * 都有什么引擎，有什么区别。
+  * 怎么修改数据表;
+  [命令行操作mysql数据表（2）](:note:646f570b-c62b-4f1a-a361-c710fb74de1c)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

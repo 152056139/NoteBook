@@ -1,0 +1,51 @@
+createdAt: "2018-09-16T15:10:56.723Z"
+updatedAt: "2018-09-16T15:11:12.812Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "HTML头部（head）"
+content: '''
+  # HTML头部（head）
+  ## \\<head>元素
+  \\<html>文档分为\\<head>和\\<body>两部分
+  \\<body>的部分会被页面按照一定规则显示出来
+  \\<head>的部分包含了所有的头部标签元素。可以插入script，css，及其各种meta信息
+  |标签|描述|
+  |----|----|
+  |title|\\<title>定义了不同文档的标题，在HTML/XHTML文档中是必须的。<br>1.定义了浏览器工具栏的标题<br>2.当网页添加到收藏夹时，显示在收藏夹中的标题<br>3.显示在搜索引擎结果页面的标题|
+  |base|\\<base>标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有链接标签的默认链接|
+  |link|\\<link>标签定义了文档与外部资源之间的关系，通常用于链接样式表|
+  |style|\\<style>标签定义了HTML文档的样式文件引用地址，也可以直接添加样式来渲染HTML文件|
+  |script|\\<script>用于加载脚本文件|
+  |meta|定义文档中的元数据,这些数据不会被显示出来，但是会被浏览器解析。如何显示内容或者重新加载页面，搜索引擎关键词，网页描述信息，文件最后修改时间，作者等等|
+  
+  ```html
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>我的示例HTML页面</title>
+          <base href="http://www.runoob.com/images/" target="_blank">
+          <link rel="stylesheet" type="text/css" href="mystyle.css">
+          <!-- 为搜索引擎定义关键字 -->
+          <meta name="keywords" content="HTML, CSS, XHTML, JavaScript">
+          <!-- 为网页定义描述内容 -->
+          <meta name="description" content="Gray的编程笔记">
+          <!-- 定义网页作者 -->
+          <meta name="author" content="Gray">
+          <!-- 每30秒刷新当前页面 -->
+          <meta http-equiv="refresh" content="30">
+          
+          <style type="text/css">
+              body {background-color:yellow}
+              p {color:blue}
+          </style>
+          
+          <script>
+              
+          </script>
+      </head>
+  </html>
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

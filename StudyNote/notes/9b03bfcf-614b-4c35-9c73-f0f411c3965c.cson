@@ -1,0 +1,12 @@
+createdAt: "2018-09-16T15:10:34.821Z"
+updatedAt: "2018-09-16T15:10:46.906Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "块"
+content: '''
+  # 块
+  html的块分为两种，除了常用的div还有span他们都是定义一个块，用css给某些块添加样式。只不过div是块级元素的块，span是行内元素的块。他们两个是一个同功能对立的两种标签。
+'''
+tags: []
+isStarred: false
+isTrashed: false

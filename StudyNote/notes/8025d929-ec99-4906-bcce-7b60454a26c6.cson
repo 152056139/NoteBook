@@ -1,0 +1,24 @@
+createdAt: "2018-09-16T15:09:19.540Z"
+updatedAt: "2018-09-16T15:09:28.088Z"
+type: "MARKDOWN_NOTE"
+folder: "b0ffd57d08bd352ab40c"
+title: "伪类"
+content: '''
+  # 伪类
+  ## 作用
+  简单的说，伪类可以向某些选择器添加特殊效果。
+  
+  ## 属性
+  |属性|描述|CSS|
+  |----|----|---|
+  |：active|向被激活的元素添加样式|1|
+  |：focus|向拥有键盘输入焦点的元素添加样式|2|
+  |：hover|当鼠标悬浮在元素上方时，向元素添加样式|1|
+  |：link|向未被访问的链接添加样式|1|
+  |：visited|向以被访问的链接添加样式|1|
+  |：first-child|向元素的第一个子元素添加样式|2|
+  |：lang|向带有指定lang属性的元素添加样式|2|
+'''
+tags: []
+isStarred: false
+isTrashed: false
