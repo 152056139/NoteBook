@@ -1,0 +1,178 @@
+createdAt: "2018-09-22T01:50:20.848Z"
+updatedAt: "2018-09-22T01:52:27.656Z"
+type: "SNIPPET_NOTE"
+folder: "2c62e450ff46ae862aa9"
+title: "作业1 HTML标签"
+description: '''
+  作业1 HTML标签
+  使用html中的各种文本标签，制作一个个人信息介绍页面。
+  信息包括：
+  （1）个人基本信息：姓名、出生日期、籍贯、民族.......，尽量全面；
+  （2）个人教育经历：哪年哪月至哪年哪月在什么学校接受什么教育；
+  （3）个人工作经历：哪年哪月至哪年哪月在什么单位工作，担任什么职务；
+  （4）个人家庭情况：父亲、子女等的姓名、出生年月、政治面貌、工作单位等信息。
+  注意：
+  （1）可以参照网络上对科学家、领导人的介绍页面；
+  （2）页面上所有的代码尽量自己书写，所有的代码都要知道其作用、含义；
+  （3）编码整洁、规范，清晰易读，添加必要的注释，对页面元素或样式进行说明。
+'''
+snippets: [
+  {
+    name: "个人简历.html"
+    mode: "HTML"
+    content: '''
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <title>我的个人信息</title>
+          <style>
+              body {
+                  padding: 20px 30px;
+                  
+              }   
+              .block {
+                  position: relative;
+                  float: left;
+                  width: 100%;
+              } 
+              .title {
+                  font-weight: bold;
+              }
+              .base-info {
+                  float: left;
+              }
+              .head-picture {
+                  float: right;
+              }
+              table {
+                  width: 100%;
+                  
+              }
+              h1 {
+                  border-left: solid 5px blue;
+                  padding: 5px 10px;
+              }
+          </style>
+      </head>
+      <body>
+          <!-- ----------------------------- 基本信息 -------------------------- -->
+          <div class="block" id="base">
+              <h1>基本信息</h1>
+                  
+              <div class="base-info">
+                  <p><label class="title">姓名：</label>杨旭</p>
+                  <p><label class="title">姓别：</label>男</p>
+                  <p><label class="title">出身日期：</label>1997年5月14日</p>
+                  <p><label class="title">籍贯：</label>陕西省 渭南市</p>
+                  <p><label class="title">民族：</label>汉族</p>
+                  <p><label class="title">学校名称：</label>太原工业学院</p>
+                  <p><label class="title">专业：</label>软件工程</p>
+                  <p><label class="title">班级：</label>1520561</p>
+                  <p><label class="title">学号：</label>152056139</p>
+              </div>
+              <img class="head-picture" src="./img/yangxu.jpg" height="200" width="auto"/>
+          </div>
+      
+          <!-- ----------------------------- 个人教育经历 -------------------------- -->
+          <div class="block" id="education">
+              <h1>个人教育经历</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>开始时间</th>
+                      <th>毕业时间</th>
+                      <th>学校名称</th>
+                      <th>学历</th>
+                      <th>地址</th>
+                  </tr>
+                  <tr>
+                      <td>2003年9月</td>
+                      <td>2009年6月</td>
+                      <td>群星学校</td>
+                      <td>小学</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                  <tr>
+                      <td>2009年9月</td>
+                      <td>2012年6月</td>
+                      <td>雏鹰学校</td>
+                      <td>初中</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>2012年9月</td>
+                      <td>2015年6月</td>
+                      <td>渭南高级中学</td>
+                      <td>高中</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                      
+                  <tr>
+                      <td>2015年9月</td>
+                      <td>2019年6月</td>
+                      <td>太原工业学院</td>
+                      <td>本科</td>
+                      <td>山西省太原市</td>
+                  </tr>
+              </table>
+          </div>
+      
+          <!-- ----------------------------- 个人工作经历 -------------------------- -->
+          <div class="block" id="job">
+              <h1>个人工作经历</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>开始时间</th>
+                      <th>离职时间</th>
+                      <th>单位名称</th>
+                      <th>职务</th>
+                  </tr>
+              </table>
+          </div>
+      
+          <!-- ----------------------------- 个人家庭情况 -------------------------- -->
+          <div class="block" id="family">
+              <h1>个人家庭情况</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>成员姓名</th>
+                      <th>关系</th>
+                      <th>出生日期</th>
+                      <th>政治面貌</th>
+                      <th>工作单位</th>
+                  </tr>
+                  <tr>
+                      <td>杨俊峰</td>
+                      <td>父子</td>
+                      <td>1972年8月13日</td>
+                      <td>无</td>
+                      <td>华氏塑业</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>叱亚梅</td>
+                      <td>母子</td>
+                      <td>1973年4月2日</td>
+                      <td>无</td>
+                      <td>华氏塑业</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>杨雨露</td>
+                      <td>兄妹</td>
+                      <td>2009年6月12日</td>
+                      <td>少先队员</td>
+                      <td></td>
+                  </tr>
+              </table>
+          </div>
+      
+      </body> 
+      </html>
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,5 +1,5 @@
 createdAt: "2018-09-19T15:24:15.894Z"
-updatedAt: "2018-09-19T15:40:10.325Z"
+updatedAt: "2018-09-25T00:02:07.998Z"
 type: "MARKDOWN_NOTE"
 folder: "711f1acaa74b205dc0d2"
 title: "SQL语句操作数据"
@@ -32,7 +32,7 @@ content: '''
   [OFFSET M]      // 表示偏移量，默认是0
   [LIMIT N]       // 表示限制多少条
   ```
-  ### WHERE子句
+  
 '''
 tags: []
 isStarred: false

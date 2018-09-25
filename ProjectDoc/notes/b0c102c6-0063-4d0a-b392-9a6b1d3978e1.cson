@@ -1,0 +1,191 @@
+createdAt: "2018-09-22T01:53:50.014Z"
+updatedAt: "2018-09-22T01:55:41.943Z"
+type: "SNIPPET_NOTE"
+folder: "2c62e450ff46ae862aa9"
+title: "作业4 Ajax请求"
+description: '''
+  作业4 Ajax请求
+  使用JS的Ajax请求，从服务端获取数据，并根据数据生成HTML元素，将其添加到页面中，以较美观的样式显示。
+  
+  （1）请求地址  https://h5.sosho.cn/server/api/community/articles?com_id=545&category_id=1&per_page=15&page=1
+  （2）从上面请求地址获得文章列表信息。data.items  为文章数组，可以在浏览器中请求上面的url，在开发者模式下network窗口打开筛选xhr（xmlhttprequest）查看异步请求和响应结果。
+  （3）根据文章列表数据，使用原生javaScript生成合适的HTML元素，设置相应的class后，将元素加入到页面中。
+  （4）通过为不同的类（class）设置样式，使得添加的页面元素以美观的样式显示出来。
+  （5）分为三个文件分别命名为ajax.html、ajax.js、ajax.css，用来存放HTML页面、js操作、样式。
+  （6）建议html页面中添加一个ul，其中每一个文章为一个li，li通过js，根据ajax请求的内容添加。
+  （7）需要用到web服务器上，大家安装tomcat。
+  （8）将内容部署到web服务器上，可以直接把3个文件，拷贝到web服务器的对应目录下。
+  （9）图中为示例效果。
+  （10）显示的文章内容至少要有
+           文章标题      title
+           文章图片      img_path
+           文章作者      author
+           文章简介      intro
+           点击数         hits_num
+           评论数         comment_num
+           转发数         share_num
+           上传日期      update_at
+  
+  
+  注意：
+  （1）作业需提交四个文件，ajax.html（网页）、ajax.css（样式）、ajax.js（js操作）和ajax.jpg（效果截图）。
+  （2）不要打压缩包。
+  （3）页面上所有的代码尽量自己书写，所有的代码都要知道其作用、含义；
+  （4）编码整洁、规范，清晰易读，添加必要的注释，对页面元素或样式进行说明；
+'''
+snippets: [
+  {
+    name: "ajax.html"
+    mode: "HTML"
+    content: '''
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <link href="./ajax.css" rel="stylesheet">
+          <script src="./ajax.js"></script>
+          <script>
+              loadXMLDoc();
+          </script>
+      </head>
+      <body>
+          <div id="demo"></div>
+      </body>
+      </html>
+      
+    '''
+  }
+  {
+    name: "ajax.js"
+    mode: "JavaScript"
+    content: '''
+      function loadXMLDoc()
+      {
+      	var xmlhttp;
+      	if (window.XMLHttpRequest)
+      	{
+      		xmlhttp=new XMLHttpRequest();
+      	}
+      	else
+      	{
+      		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      	}
+      	xmlhttp.onreadystatechange=function()
+      	{
+      		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+      		{
+                  showData(xmlhttp.responseText);
+      		}
+      	}
+      	xmlhttp.open("GET","https://h5.sosho.cn/server/api/community/articles?com_id=545&category_id=1&per_page=15&page=5",true);
+      	xmlhttp.send();
+      }
+      function showData(data)
+      {
+          var dataObj = JSON.parse(data);
+          var items = dataObj.data.items;
+      
+          var div = "";
+          for(var i = 0; i < 15; i++)
+          {
+              div +=
+              "<div class='item'>" +
+                  "<img class='img' src='" + items[i].img_path + "'/>" +
+                  "<div class='info'>" +
+                      "<p class='title'>" + items[i].title + "</p>"+
+                      "<p class='author'>" + items[i].author + "</p>"+
+                      "<p class='intro'>" + items[i].intro + "</p>"+
+                      "<p class='update_at'>" + items[i].update_at + "</p>"+
+                      "<div class='blue'>" +
+                          "<p class='hits_num'>点击数：" + items[i].hits_num + "</p>"+
+                          "<p class='comment_num'>留言数：" + items[i].comment_num + "</p>"+
+                          "<p class='share_num'>分享数：" + items[i].share_num + "</p>"+
+                      "</div>" +
+                  "</div>" +
+              "</div>";
+          }
+          document.getElementById("demo").innerHTML = div;
+      }
+      
+    '''
+  }
+  {
+    name: "ajax.css"
+    mode: "CSS"
+    content: '''
+      body {
+          margin: 0;
+      }
+      p {
+          display: inline;
+          margin: 0;
+      }
+      .item {
+          width: 90%;
+          height: auto;
+          margin-bottom: 20px;
+          background: #ddd;
+          padding: 10px 20px;
+          margin: auto;
+          margin-top: 10px;
+          border-radius: 5px;
+          border: 1px solid #000;
+          position: relative;
+      }
+      .img {
+          width: 30%;
+          overflow: hidden;
+          border-radius: 5px;
+          align: center;
+          display: inline-block;
+      }
+      .info {
+          width: 63%;
+          display: inline-block;
+          margin-left: 2%;
+      }
+      .title {
+          font-size: 130%;
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          margin: 1%;
+      }
+      .update_at {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 1%;
+      }
+      .intro {
+          position: absolute;
+          top: 4em;
+          margin: 0 1%;
+      }
+      .blue {
+          position: absolute;
+          bottom: 2%;
+          background: #ADBCEA;
+          padding: 10px;
+          border-radius: 10px;
+          width: 65%;
+      }
+      .hits_num  {
+          position: relative;
+          left: 0;
+      }
+      .comment_num {
+          position: relative;
+          left:30%;
+      }
+      .share_num {
+          position: relative;
+          left: 65%;
+       }
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

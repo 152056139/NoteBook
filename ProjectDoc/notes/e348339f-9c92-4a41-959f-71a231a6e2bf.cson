@@ -1,0 +1,206 @@
+createdAt: "2018-09-22T01:51:51.649Z"
+updatedAt: "2018-09-22T01:52:43.692Z"
+type: "SNIPPET_NOTE"
+folder: "2c62e450ff46ae862aa9"
+title: "作业2 HTML表单元素"
+description: '''
+  作业2 HTML表单元素
+  使用html的form表单中的各个标签，完成在上一题目中“个人基本信息”部分的表单输入页面的设计。
+  
+  注意：
+  （1）可以参照网络上一些表单页面；
+  （2）页面上所有的代码尽量自己书写，所有的代码都要知道其作用、含义；
+  （3）编码整洁、规范，清晰易读，添加必要的注释，对页面元素或样式进行说明；
+  （4）作业分别提交html文件、css文件和页面效果截图，不要压缩打包。
+'''
+snippets: [
+  {
+    name: "表单.html"
+    mode: "HTML"
+    content: '''
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <title>我的个人信息</title>
+          <style>
+              body {
+                  padding: 20px 30px;
+                  
+              }   
+              .block {
+                  position: relative;
+                  float: left;
+                  width: 100%;
+              } 
+              .title {
+                  font-weight: bold;
+              }
+              .base-info {
+                  float: left;
+              }
+              .img {
+                  float: right;
+              }
+              table {
+                  width: 100%;
+                  
+              }
+              h1 {
+                  border-left: solid 5px blue;
+                  padding: 5px 10px;
+              }
+          </style>
+      </head>
+      <body>
+          <!-- ----------------------------- 基本信息 -------------------------- -->
+          <form>
+              <div class="block" id="base">
+                  <h1>基本信息</h1>
+                      
+                  <div class="base-info">
+                      <p><label class="title">姓名：</label>
+                          <input type="text"/>
+                      </p>
+                      <p><label class="title">姓别：</label>
+                          <input type="radio" name="sex" value="male"  />男
+                          <input type="radio" name="sex" value="famale" /> 女
+                      </p>
+                      <p>
+                          <label class="title">出身日期：</label>
+                          <input type="date">
+                      </p>
+                      <p><label class="title">籍贯：</label>
+                          <input type="text" />省 
+                          <input type="text" />市
+                      </p>
+                      <p><label class="title">民族：</label>
+                          <select name="natrue">
+                              <option value="han">汉族</option>
+                              <option value="hui">回族</option>
+                          </select>
+                      </p>
+                      <p><label class="title">学校名称：</label>
+                          <input type="text" />
+                      </p>
+                      <p><label class="title">专业：</label>
+                          <input type="text" />
+                      </p>
+                      <p><label class="title">班级：</label>
+                          <input type="text" />
+                      </p>
+                      <p><label class="title">学号：</label>
+                          <input type="text" />
+                      </p>
+                  </div>
+                  <div class="img">
+                      <img class="head-picture" src="./img/yangxu.jpg" height="200" width="auto"/>
+                      <br>
+                      <input type="file" />
+                  </div>
+                  
+              </div>
+          </form>
+       
+          <!-- ----------------------------- 个人教育经历 -------------------------- -->
+          <div class="block" id="education">
+              <h1>个人教育经历</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>开始时间</th>
+                      <th>毕业时间</th>
+                      <th>学校名称</th>
+                      <th>学历</th>
+                      <th>地址</th>
+                  </tr>
+                  <tr>
+                      <td>2003年9月</td>
+                      <td>2009年6月</td>
+                      <td>群星学校</td>
+                      <td>小学</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                  <tr>
+                      <td>2009年9月</td>
+                      <td>2012年6月</td>
+                      <td>雏鹰学校</td>
+                      <td>初中</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>2012年9月</td>
+                      <td>2015年6月</td>
+                      <td>渭南高级中学</td>
+                      <td>高中</td>
+                      <td>陕西省渭南市</td>
+                  </tr>
+                      
+                  <tr>
+                      <td>2015年9月</td>
+                      <td>2019年6月</td>
+                      <td>太原工业学院</td>
+                      <td>本科</td>
+                      <td>山西省太原市</td>
+                  </tr>
+              </table>
+          </div>
+      
+          <!-- ----------------------------- 个人工作经历 -------------------------- -->
+          <div class="block" id="job">
+              <h1>个人工作经历</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>开始时间</th>
+                      <th>离职时间</th>
+                      <th>单位名称</th>
+                      <th>职务</th>
+                  </tr>
+              </table>
+          </div>
+      
+          <!-- ----------------------------- 个人家庭情况 -------------------------- -->
+          <div class="block" id="family">
+              <h1>个人家庭情况</h1>
+              <table border="1" cellspacing="0">
+                  <tr>
+                      <th>成员姓名</th>
+                      <th>关系</th>
+                      <th>出生日期</th>
+                      <th>政治面貌</th>
+                      <th>工作单位</th>
+                  </tr>
+                  <tr>
+                      <td>杨俊峰</td>
+                      <td>父子</td>
+                      <td>1972年8月13日</td>
+                      <td>无</td>
+                      <td>华氏塑业</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>叱亚梅</td>
+                      <td>母子</td>
+                      <td>1973年4月2日</td>
+                      <td>无</td>
+                      <td>华氏塑业</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>杨雨露</td>
+                      <td>兄妹</td>
+                      <td>2009年6月12日</td>
+                      <td>少先队员</td>
+                      <td></td>
+                  </tr>
+              </table>
+          </div>
+      
+      </body> 
+      </html>
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false
